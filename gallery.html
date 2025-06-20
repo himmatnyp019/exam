@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>: Our University Gallery</title>
+  <link rel="icon" href="img/eco-icon.png" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #aeaeae;
+      font-family: 'Segoe UI', "cosmic", Verdana, sans-serif;
+      color: #434343;
+      text-align: center;
+    }
+
+    header img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+  
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      background-color: #262627;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .nav-buttons a {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .nav-buttons button {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      background-color: rgb(75, 74, 74);
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      color: #345c6b;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      font-size: 1.1em;
+      color: #5c5c5c;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #212120;
+      color: #ffffff;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #dad8d8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    
+    .testimony-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .testimonial {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      font-style: italic;
+      transition: transform 0.3s;
+    }
+
+    .testimonial:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial p:first-child {
+      font-weight: bold;
+      color: #4a6f4d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/back-img.jpg" alt="Header Image" />
+  </header>
+
+  <nav class="nav-buttons">
+    <a href="index.html"><button>Home</button></a>
+    <a href="menu.html"><button>Menu</button></a>
+    <a href="gallery.html"><button>Gallery</button></a>
+  </nav>
+
+  <main>
+    <h1>Gallery</h1>
+    <p class="subtitle">University Views and Attractions</p>
+    <div class="gallery">
+      <img src="https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?cs=srgb&dl=pexels-pixabay-159490.jpg&fm=jpg" alt="Haeundae Sand Festival" />
+      <img src="https://png.pngtree.com/thumb_back/fw800/background/20221214/pngtree-high-school-graduates-students-university-people-finish-photo-image_42808838.jpg" alt="Haeundae Beach May 2024" />
+      <img src="https://png.pngtree.com/thumb_back/fw800/background/20221214/pngtree-empty-classroom-coronavirus-university-college-photo-image_43102788.jpg" alt="Haeundae Beach Night" />
+    </div>
+  </main>
+
+ <h3>Testimony</h3>
+    <div class="testimony-container">
+      <div class="testimonial">
+        <p>--Himmat Nep ★★★★★</p>
+        <p>"I am doing undergraduate in Global IT Engineering in this university. It provides the wide range of practical knowledge with vast course."</p>
+      </div>
+      <div class="testimonial">
+        <p>--Sushant ★★★★★</p>
+        <p>"I would like to give 5 out 5 rating for this university for their quality education and various facilities that they provide. It was really awesome to be a graduate student from this university."</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    | University Digital Information Site |
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+  </footer>
+</body>
+</html>
